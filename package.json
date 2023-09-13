@@ -1,6 +1,6 @@
 {
-  "name": "Staark Development",
-  "version": "0.1.0",
+  "name": "staark.info",
+  "version": "0.1",
   "private": true,
   "homepage": "http://staark.info",
   "dependencies": {
