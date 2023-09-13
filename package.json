@@ -2,7 +2,7 @@
   "name": "staark.info",
   "version": "0.1",
   "private": true,
-  "homepage": "http://staark.info",
+  "homepage": "http://www.staark.info",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
