@@ -1,13 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import StaarkDev from './App';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('main-root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <StaarkDev />
   </React.StrictMode>
 );
 
