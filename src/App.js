@@ -28,12 +28,12 @@ export default function App() {
 	return (
 	<div className="container">
 		<header className="s-header">
+		<RouterProvider router={guide} />
 		<p>
 			Welcome to Staark Development ❤️
 			<h1>You now browse to best site of resources.</h1>
 		</p>
 		</header>
-		<RouterProvider router={guide} />
 	</div>
 	);
 }
