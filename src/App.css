@@ -16,3 +16,32 @@
 .App-link {
   color: #61dafb;
 }
+
+ul.nav-links {
+  background: #efefef;
+}
+
+body, html {
+  padding: 0;
+  margin: 0;
+  width: max-content;
+  display: block;
+}
+
+div#root {
+  display: block;
+  margin: 0;
+  padding: 0;
+  background: #727272;
+  height: 100vh;
+  max-width: 100vh;
+}
+
+ul.nav-links > a {
+  font-size: 16px;
+  align-items: baseline;
+  color: #330707;
+  text-decoration: none;
+  padding: 5px 20px;
+  font-family: Calibri, sans-serif;
+}
