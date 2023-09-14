@@ -4,7 +4,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import StaarkDev from './App';
 
-const root = ReactDOM.createRoot(document.getElementById('main-root'));
+const root = ReactDOM.createRoot(document.getElementById('main_root'));
 root.render(
   <React.StrictMode>
     <StaarkDev />
