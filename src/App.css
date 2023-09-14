@@ -17,31 +17,53 @@
   color: #61dafb;
 }
 
-ul.nav-links {
-  background: #efefef;
-}
-
 body, html {
-  padding: 0;
-  margin: 0;
-  width: max-content;
-  display: block;
+  margin: 0 !important;
+  padding: 0 !important;
 }
 
 div#root {
   display: block;
   margin: 0;
   padding: 0;
-  background: #727272;
+  background: #eaeaea;
   height: 100vh;
-  max-width: 100vh;
 }
 
-ul.nav-links > a {
-  font-size: 16px;
-  align-items: baseline;
-  color: #330707;
-  text-decoration: none;
-  padding: 5px 20px;
-  font-family: Calibri, sans-serif;
+ul.nav-links {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    min-width: 80vh;
+    float: right;
+}
+
+ul.nav-links > li > a {
+    color: #e0d9d9;
+    display: inline-block;
+    font-family: Calibri,sans-serif;
+    font-size: 16px;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.s-header {
+  background-color: #333;
+  height: auto;
+  margin: 0!important;
+  display: list-item;
+  overflow: hidden;
+  width: auto;
+}
+
+ul.nav-links > li {
+  display: inline;
+  padding: 10px 15px;
+}
+
+a.nav-link:hover {
+    background: #2f2f2f;
+    color: #dad9d9;
 }
