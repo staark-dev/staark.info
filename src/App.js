@@ -27,7 +27,7 @@ const guide = createBrowserRouter([
 
 export default function App() {
 	return (
-	<div className="App">
+	<div className='container'>
 		<RouterProvider router={guide} />
 		
 		<header className="s-header">
