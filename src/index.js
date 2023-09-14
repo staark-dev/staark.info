@@ -4,10 +4,10 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import StaarkDev from './App';
 
-const root = ReactDOM.createRoot(document.getElementById('main_root'));
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <StaarkDev />
+    <App />
   </React.StrictMode>
 );
 
