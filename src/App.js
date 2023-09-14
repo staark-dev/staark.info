@@ -1,11 +1,10 @@
+// Important Functions
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import { Routes } from 'react-router-dom';
-import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
-
-import logo from './logo.svg';
+// Stylesheet
 import './App.css';
 
-
+// Loading all components
 import Navbar from './components/Navigation';
 import Home from './pages/home';
 import Services from './pages/services';
