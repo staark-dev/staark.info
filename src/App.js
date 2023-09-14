@@ -11,7 +11,7 @@ import Contact from './pages/contact';
 const guide = createBrowserRouter([
 	{
 	  path: "/",
-	  element: <Nav />,
+	  element: <Navbar />,
 	  children: [
 		{ path: "/home", element: <Home /> },
 		{ path: "/services", element: <Services /> },
