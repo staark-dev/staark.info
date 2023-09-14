@@ -1,8 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-import Navbar from './components/Navigation';
+
 import { Routes } from 'react-router-dom';
 import { createBrowserRouter, RouterProvider, Link } from "react-router-dom";
+
+import logo from './logo.svg';
+import './App.css';
+
+
+import Navbar from './components/Navigation';
 import Home from './pages/home';
 import Services from './pages/services';
 import Projects from './pages/projects';
