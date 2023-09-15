@@ -1,11 +1,12 @@
 // Important Functions
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import React from "react";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 
 // Stylesheet
 import './App.css';
 
 // Loading all components
-import Navbar from './components/Navigation';
+import Navbar from './components/Navbar';
 import Home from './pages/home';
 import Services from './pages/services';
 import Projects from './pages/projects';
@@ -13,8 +14,10 @@ import Contact from './pages/contact';
 
 const guide = createBrowserRouter([
 	{
-	  path: "/",
-	  element: <Navbar />,
+	  path: "/", 
+	  element: <Home />,
+	  basename: "/",
+	  loader: <Navbar />,
 	  children: [
 		{ path: "/home", element: <Home /> },
 		{ path: "/services", element: <Services /> },
@@ -24,8 +27,12 @@ const guide = createBrowserRouter([
 	}
   ]);
 
+
+  // <RouterProvider router={guide} />
 export default function App() {
-	return (<div className="s-header">
-		<RouterProvider router={guide} />
-	</div>);
+	return (
+		<div className="App">
+			<RouterProvider router={guide} />
+		</div>
+	);
 }
