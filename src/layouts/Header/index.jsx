@@ -27,7 +27,7 @@ export default function Header() {
                         </li>
 
                         <li class="nav-item">
-                            <Link to="/contact" className="nav-link">Contact</Link>
+                            <Link to="/contact" className="nav-link btn tbn-sm btn-primary">Contact</Link>
                         </li>
                     </ul>
                 </div>
