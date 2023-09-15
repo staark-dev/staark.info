@@ -2,11 +2,14 @@
 import { Fragment } from "react";
 import Header from "../../layouts/Header";
 import Footer from "../../layouts/Footer";
+import Layout from "layouts/Main";
 
 export default function Features() {
     return (<Fragment>
         <Header />
-        <h1>Page Features works !</h1>
+        <Layout>
+            <h1>Page Features works !</h1>
+        </Layout>
         <Footer />
     </Fragment>)
 }

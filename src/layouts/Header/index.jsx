@@ -9,9 +9,9 @@ export default function Header() {
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
+                    <ul class="navbar-nav mr-auto justify-content-end">
                         <li class="nav-item active">
-                            <Link to="/" className="nav-link">Home <span class="sr-only">(current)</span></Link>
+                            <Link to="/" className="nav-link">Home</Link>
                         </li>
 
                         <li class="nav-item">
