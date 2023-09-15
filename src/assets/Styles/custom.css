@@ -1,0 +1,15 @@
+.container-main {
+    min-height: 70vh;
+    padding: 10px 20px;
+    background: #ebebeb;
+}
+
+footer .nav-link, footer p {
+    color: #c3bdbd !important;
+}
+
+footer {
+    height: auto;
+    background: #333;
+    color: white;
+}

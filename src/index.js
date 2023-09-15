@@ -3,6 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.css';
 import reportWebVitals from './reportWebVitals';
+import 'assets/Styles/custom.css';
 
 // Create Routes Hook
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
