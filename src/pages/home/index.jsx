@@ -6,7 +6,7 @@ export default function Home() {
     return (
         <>
             <Header />
-            <div className='container'>
+            <div className='container-main'>
                 <h1>Home Page Work !</h1>
             </div>
             <Footer />
