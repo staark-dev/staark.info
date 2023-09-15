@@ -17,3 +17,7 @@ footer {
 header .nav {
     justify-content: flex-end !important;
 }
+
+div#navbarSupportedContent {
+    justify-content: flex-end;
+}
