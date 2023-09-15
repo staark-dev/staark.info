@@ -13,3 +13,7 @@ footer {
     background: #333;
     color: white;
 }
+
+header .nav {
+    justify-content: flex-end !important;
+}
