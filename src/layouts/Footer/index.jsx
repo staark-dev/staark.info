@@ -12,7 +12,7 @@ export default function Footer() {
                     <li class="nav-item"><Link to="/privacy" className="nav-link px-2 text-body-secondary">Privacy</Link></li>
                     <li class="nav-item"><Link to="/terms" className="nav-link px-2 text-body-secondary">Terms & Conditions</Link></li>
                 </ul>
-                <p class="text-center text-body-secondary">© 2023 Company, Inc</p>
+                <p class="text-center text-body-secondary">© 2023 Staark Development ❤️<br /> &copy; All right reserved.</p>
             </footer>
             <Outlet />
         </div>
