@@ -80,3 +80,18 @@ div#navbarSupportedContent {
     width: auto;
     margin-top: -5px;
 }
+
+img.background {
+    opacity: .2;
+    overflow: hidden;
+    width: 60vh;
+    position: absolute;
+    z-index: 9999;
+    left: 5vh;
+    top: 15vh;
+}
+
+main {
+    overflow: hidden;
+    min-height: 80vh;
+}
