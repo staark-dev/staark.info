@@ -8,7 +8,7 @@ export default function Contact() {
     return (<Fragment>
         <Header />
         <Layout>
-            <h1>Contact Features works !</h1>
+            
         </Layout>
         <Footer />
     </Fragment>)

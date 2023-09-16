@@ -14,7 +14,7 @@ const Portofolio = () => {
 
         <div class="card-group">
         {ProductList.map((data) => (
-            <div className="card mb-3">
+            <div className="card mb-4 box-shadow">
                 <div class="card-header">{data.title}</div>
                 <div class="card-body text-center">
                     <h6 class="card-subtitle mb-2 text-muted">{data.description}</h6>
