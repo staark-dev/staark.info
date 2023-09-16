@@ -12,7 +12,7 @@ const Portofolio = () => {
     return (<div className="container">
         <div className="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
             <h1 class="display-4">Projects</h1>
-            <p class="lead">Quickly build an effective pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.</p>
+            <p class="lead">Quickly build an effective projects table for your potential customers with this model. It's built with default <i>Bootstrap components</i> and utilities with little customization.</p>
         </div>
 
         <div className="card-deck mb-3 text-center">
