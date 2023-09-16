@@ -74,3 +74,9 @@ div#navbarSupportedContent {
         margin-left: 15px;
     }
 }
+
+.logo {
+    height: 20px;
+    width: auto;
+    margin-top: -5px;
+}
