@@ -95,3 +95,32 @@ main {
     overflow: hidden;
     min-height: 80vh;
 }
+
+h1.display-2 {
+    color: #ddd;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    margin: 0;
+    font-size: 4rem;
+    text-shadow: 0 2px #0000004d;
+}
+
+.jumbotron {
+    background-color: #e9ecef;
+    border-radius: 0.3rem;
+    margin-bottom: 2rem;
+    padding: 2rem 1rem;
+    height: 400px;
+    max-width: 2000px;
+    margin: auto;
+    background-image: url(https://images.pexels.com/photos/1714208/pexels-photo-1714208.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    background-position: 50%;
+}
+
+.jumbotron p {
+    color: whitesmoke;
+    text-shadow: 0 2px #000000a6;
+}
