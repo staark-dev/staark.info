@@ -30,23 +30,20 @@ const Portofolio = () => {
     const fetchLanguage = (lang) => {
         switch(lang) {
             case "PHP":
-                return <FontAwesomeIcon icon={faPhp} />;
+                return <FontAwesomeIcon icon={faPhp} title="PHP Language Type" />;
                 break;
             case "JavaScript":
-                return <FontAwesomeIcon icon={faJsSquare} />;
+                return <FontAwesomeIcon icon={faJsSquare} title="JavaScript Language Type" />;
                 break;
-            case "null":
-                return <FontAwesomeIcon icon={faCircleQuestion} />;
-                break;
-            case "":
-                return <FontAwesomeIcon icon={faCircleQuestion} />;
+            case null:
+                return <FontAwesomeIcon icon={faCircleQuestion} title="Unknow Language Type" />;
         }
     };
 
     const fetchVisibility = (status) => {
         switch(status) {
             case "public":
-                return <FontAwesomeIcon icon={faLockOpen} />;
+                return <FontAwesomeIcon icon={faLockOpen} title="Open for Fork"/>;
                 break;
             case "private":
                 return <FontAwesomeIcon icon={faLock} />;
@@ -66,12 +63,12 @@ const Portofolio = () => {
             <div className="card mb-4 box-shadow">
                 <div class="card-body text-center">
                     <h4>{data.description}</h4>
-                    <h6 class="card-subtitle mb-2 text-muted"></h6>
+                    <h6 class="card-subtitle mb-2 text-muted">{ fetchVisibility(data.visibility) } {data.name}</h6>
                     <br />
-                    { fetchVisibility(data.visibility) } | { fetchLanguage(data.language) } | {data.stargazers_count} <FontAwesomeIcon icon={faStar} />
-                    <br />
-                    <br />
+                    <span class="text-center p-1 mb-5 bg-dark text-white rounded-sm">{ fetchLanguage(data.language) }&nbsp;&nbsp;{data.stargazers_count} <FontAwesomeIcon icon={faStar} /></span>
+                    <br /><br />
                     <Link to={data.svn_url} class="card-link btn btn-sm btn-primary"> View on <FontAwesomeIcon icon={faGithub} /> </Link>
+                    <Link to={`${data.svn_url}/fork`} class="card-link btn btn-sm btn-warning"> Forks on <FontAwesomeIcon icon={faGithub} /> </Link>
                 </div>
                 <div class="card-footer">
                     <small class="text-muted mx-4 text-right"><FontAwesomeIcon icon={icon({name: 'clock', style: 'solid'})} /> Last updated { moment(data.created_at).fromNow() } by <span class="text-center p-1 mb-0 bg-dark text-white rounded-sm">{data.owner.login}</span></small>
