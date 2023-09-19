@@ -65,7 +65,7 @@ const Portofolio = () => {
                     <h4>{data.description}</h4>
                     <h6 class="card-subtitle mb-2 text-muted">{ fetchVisibility(data.visibility) } {data.name}</h6>
                     <br />
-                    <span class="text-center p-1 mb-5 bg-dark text-white rounded-sm">{ fetchLanguage(data.language) }&nbsp;&nbsp;{data.stargazers_count} <FontAwesomeIcon icon={faStar} /></span>
+                    <span class="text-center p-1 bg-dark text-white rounded">{ fetchLanguage(data.language) }&nbsp;&nbsp;{data.stargazers_count} <FontAwesomeIcon icon={faStar} /></span>
                     <br /><br />
                     <Link to={data.svn_url} class="card-link btn btn-sm btn-primary"> View on <FontAwesomeIcon icon={faGithub} /> </Link>
                     <Link to={`${data.svn_url}/fork`} class="card-link btn btn-sm btn-warning"> Forks on <FontAwesomeIcon icon={faGithub} /> </Link>
