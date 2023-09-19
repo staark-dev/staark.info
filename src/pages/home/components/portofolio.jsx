@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, Outlet } from "react-router-dom";
 import moment from 'moment';
 
@@ -11,7 +11,7 @@ import { faCircleQuestion, faLock, faLockOpen, faStar } from "@fortawesome/free-
 const Portofolio = () => {
     const [user, setUser] = useState([]);
 
-    const fetchRepos = () => {
+    useEffect(() => {
         fetch(`https://api.github.com/users/staark-dev/repos?sort=created&direction=dsc&per_page=7`)
         .then((response) => (response.json()))
         .then((data) => {
@@ -21,22 +21,23 @@ const Portofolio = () => {
                 setUser([...user, ...data]);
             }
         })
-    };
-
-    useEffect(() => {
-        fetchRepos();
     }, []);
 
     const fetchLanguage = (lang) => {
         switch(lang) {
             case "PHP":
-                return <FontAwesomeIcon icon={faPhp} title="PHP Language Type" />;
+                return (<FontAwesomeIcon icon={faPhp} title="PHP Language Type" />);
                 break;
+
             case "JavaScript":
-                return <FontAwesomeIcon icon={faJsSquare} title="JavaScript Language Type" />;
+                return (<FontAwesomeIcon icon={faJsSquare} title="JavaScript Language Type" />);
                 break;
+
             case null:
-                return <FontAwesomeIcon icon={faCircleQuestion} title="Unknow Language Type" />;
+                return (<FontAwesomeIcon icon={faCircleQuestion} title="Unknow Language Type" />);
+                break;
+            
+            default: return false;
         }
     };
 
@@ -47,20 +48,20 @@ const Portofolio = () => {
                 break;
             case "private":
                 return <FontAwesomeIcon icon={faLock} />;
+
+            default: return false;
         }
     };
 
 
     return (<div className="container">
         <div className="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-            <h1 class="display-4">Projects</h1>
-            <p class="lead">Quickly build an effective projects table for your potential customers with this model. It's built with default <i>Bootstrap components</i> and utilities with little customization.</p>
-        </div>
+            <h1 class="display-4">Projects</h1></div>
         <br />
         <br />
         <div className="card-deck mb-3 text-center">
         {user.map((data) => (
-            <div className="card mb-4 box-shadow">
+            <div className="card mb-4 box-shadow" key={data.id}>
                 <div class="card-body text-center">
                     <h4>{data.description}</h4>
                     <h6 class="card-subtitle mb-2 text-muted">{ fetchVisibility(data.visibility) } {data.name}</h6>

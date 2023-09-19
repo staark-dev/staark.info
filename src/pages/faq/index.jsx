@@ -8,7 +8,9 @@ export default function FAQ() {
     return (<Fragment>
         <Header />
         <Layout>
+            <div className="container">
             <h1>Page FAQ works !</h1>
+            </div>
         </Layout>
         <Footer />
     </Fragment>)

@@ -1,5 +1,5 @@
 // Import React Hooks and Library
-import React, { Fragment, useState } from "react";
+import React, { Fragment } from "react";
 import Header from "../../layouts/Header";
 import Layout from "../../layouts/Main";
 import Footer from "../../layouts/Footer";
@@ -7,8 +7,6 @@ import logo from "../contact/images/mail.png";
 import FormSendEmails from "../../hooks/sendMail";
 
 export default function Contact() {
-    //const sendMail = useState(false);
-
     return (<Fragment>
         <Header />
         <Layout>
